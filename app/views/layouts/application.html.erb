@@ -21,6 +21,20 @@
         <p class="alert"><%= alert %></p>
       </div>
     <% end %>
+
+    <!-- Bootstrap 5 Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+       <div class="container-fluid">
+          <%= link_to root_path, class: "nav-item" do %>
+            <h4 class="title text-white">Twittter</h4>
+          <% end %>
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+            <%= link_to 'New Tweeet', new_tweeet_path, class: "btn bg-light text-primary" %>                        
+          </div>
+          <p class="text-white my-0 mx-2">Sign Up</p>
+       </div>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
