@@ -1,12 +1,12 @@
 <div class="section d-flex justify-content-center">
-  <div class="gravatar">
+  <div class="card d-flex gravatar">
     <img src="http://www.gravatar.com/avatar" class="card-img-top rounded-circle" alt="foto" style="width: 5rem"; >
   </div>
 
   <div class="card">
     <% @tweeets.each do |tweeet| %>
       <div class="d-flex">
-        <div class="card-image gravatar">
+        <div class="card-image avatar">
           <img src="http://www.gravatar.com/avatar" class="card-img-left rounded-circle" alt="foto">
         </div>
 
@@ -15,9 +15,15 @@
             <p class="card-text"><%= tweeet.tweeet %></p>
           </div>
           <div class="icons d-flex">
-            <%= link_to 'Show', tweeet %>
-            <%= link_to 'Edit', edit_tweeet_path(tweeet) %>
-            <%= link_to 'Destroy', tweeet, method: :delete, data: { confirm: 'Are you sure you want to delete this tweet?' } %>
+            <%= link_to tweeet, class: "mx-1" do %>
+              <i class="fa fa-link"></i>
+            <% end %>
+            <%= link_to edit_tweeet_path(tweeet), class: "mx-1" do %>
+              <i class="fa fa-pencil"></i>
+            <% end %>
+            <%= link_to tweeet, method: :delete, data: { confirm: 'Are you sure you want to delete this tweet?' }, class: "mx-1" do %>
+              <i class="fa fa-trash-o"></i>
+            <% end %>
           </div>
         </div>
       </div>
