@@ -8131,3 +8131,49 @@ Processing by TweeetsController#index as HTML
 Completed 200 OK in 203ms (Views: 65.6ms | ActiveRecord: 107.3ms | Allocations: 11740)
 
 
+Started GET "/tweeets/" for ::1 at 2021-06-23 00:53:53 +0100
+  [1m[35m (34.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TweeetsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (Duration: 747.7ms | Allocations: 12471)
+  [1m[36mTweeet Load (32.1ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY "tweeets"."created_at" DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:12
+  Rendered tweeets/_feed.html.erb (Duration: 66.7ms | Allocations: 1592)
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 22.8ms | Allocations: 98)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 866.3ms | Allocations: 15141)
+Started GET "/" for ::1 at 2021-06-23 00:54:11 +0100
+Processing by TweeetsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (Duration: 8.0ms | Allocations: 2909)
+  [1m[36mTweeet Load (99.5ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY "tweeets"."created_at" DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:12
+  Rendered tweeets/_feed.html.erb (Duration: 208.0ms | Allocations: 1294)
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 452.4ms | Allocations: 4508)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27779.7ms | Allocations: 62240)
+  Rendered layout layouts/application.html.erb (Duration: 11343.1ms | Allocations: 36764)
+Completed 200 OK in 28124ms (Views: 27813.3ms | ActiveRecord: 144.8ms | Allocations: 68180)
+
+
+Completed 200 OK in 11953ms (Views: 11282.0ms | ActiveRecord: 523.4ms | Allocations: 40351)
+
+
+Started GET "/" for ::1 at 2021-06-23 00:55:55 +0100
+Processing by TweeetsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tweeets/index.html.erb within layouts/application
+  Rendered tweeets/_form.html.erb (Duration: 6.7ms | Allocations: 3111)
+  [1m[36mTweeet Load (1.7ms)[0m  [1m[34mSELECT "tweeets".* FROM "tweeets" ORDER BY "tweeets"."created_at" DESC[0m
+  ↳ app/views/tweeets/_feed.html.erb:12
+  Rendered tweeets/_feed.html.erb (Duration: 5.8ms | Allocations: 1497)
+  Rendered tweeets/_who-to-follow.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendered tweeets/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 5499)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 9606)
+Completed 200 OK in 40ms (Views: 33.9ms | ActiveRecord: 1.7ms | Allocations: 10968)
+
+
