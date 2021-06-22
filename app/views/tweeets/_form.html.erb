@@ -1,22 +1,16 @@
-<%= form_with(model: tweeet) do |form| %>
-  <% if tweeet.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(tweeet.errors.count, "error") %> prohibited this tweeet from being saved:</h2>
+<div class="form d-flex justify-content-center">
+  <%= simple_form_for(@tweeet) do |f| %>
 
-      <ul>
-        <% tweeet.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+    <%- if f.error_notification %>
+      <div class="alert alert-error fade in">
+        <a class="close" data-dismiss="alert" href="#">&times;</a>
+        <%= f.error_notification %>
+      </div>
+    <%- end %>
+
+    <div class="form-inputs">
+      <%= f.input :tweeet, label: "Tweeet about it", input_html: { class: "textarea rounded" }, label_html: { class: "label d-flex flex-column" }, placeholder: "Compose a new tweeet..." %>       
     </div>
+    <%= f.button :submit, class: "btn btn-primary new-tweeet-btn" %>
   <% end %>
-
-  <div class="field">
-    <%= form.label :tweeet %>
-    <%= form.text_area :tweeet %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+</div>
