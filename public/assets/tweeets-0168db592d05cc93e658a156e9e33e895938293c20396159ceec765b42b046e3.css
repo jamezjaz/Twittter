@@ -1,0 +1,42 @@
+/* line 5, app/assets/stylesheets/tweeets.scss */
+.nav-item {
+  text-decoration: none;
+}
+
+/* line 9, app/assets/stylesheets/tweeets.scss */
+.gravatar {
+  margin-right: 4rem;
+  width: 17rem;
+  height: 5.5rem;
+}
+
+/* line 15, app/assets/stylesheets/tweeets.scss */
+.new-btn {
+  position: absolute;
+  left: 19rem;
+}
+
+/* line 20, app/assets/stylesheets/tweeets.scss */
+.who {
+  margin-left: 5rem;
+}
+
+/* line 24, app/assets/stylesheets/tweeets.scss */
+.bio {
+  margin-left: 1rem;
+}
+
+/* line 28, app/assets/stylesheets/tweeets.scss */
+.who-heading {
+  margin-left: 5rem;
+}
+
+/* line 32, app/assets/stylesheets/tweeets.scss */
+.form .textarea {
+  width: 33rem;
+}
+
+/* line 40, app/assets/stylesheets/tweeets.scss */
+.new-tweeet-btn {
+  margin-bottom: 2rem;
+}
